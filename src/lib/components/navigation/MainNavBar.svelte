@@ -4,7 +4,9 @@
 </script>
 
 <PageContent>
-	{#each routes.mainNav as { name, href }}
-		<a {href} class="mx-4 font-semibold">{name}</a>
-	{/each}
+	<nav class="flex min-w-full gap-8 border-b px-4 pb-4 pt-8">
+		{#each routes.mainNav as { name, href }}
+			<a {href} class="font-semibold">{name}</a>
+		{/each}
+	</nav>
 </PageContent>

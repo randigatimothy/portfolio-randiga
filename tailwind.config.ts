@@ -13,7 +13,7 @@ const config: Config = {
 			},
 		},
 		fontFamily: {
-			display: ['Italiana', 'serif'],
+			display: ['Newsreader', 'serif'],
 			body: ['Montserrat', 'Roboto', 'sans-serif'],
 		},
 		extend: {

@@ -3,11 +3,12 @@
 	import '@/lib/styles/fonts.css';
 
 	import MainNavBar from '@/lib/components/navigation/MainNavBar.svelte';
-	import PageContent from '@/lib/components/layout/PageContent.svelte';
+	import WebShell from '@/lib/components/layout/WebShell.svelte';
 </script>
 
-<MainNavBar />
-
-<PageContent>
-	<slot></slot>
-</PageContent>
+<WebShell>
+	<MainNavBar slot="header" />
+	<main slot="main">
+		<slot />
+	</main>
+</WebShell>
