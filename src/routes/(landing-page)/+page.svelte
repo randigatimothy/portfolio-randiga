@@ -34,11 +34,13 @@
 			</div>
 
 			{#each Array(3) as _}
-				<div class="flex flex-wrap items-start justify-start gap-4">
-					<figure class="aspect-video w-full max-w-screen-sm flex-1 overflow-hidden">
+				<div
+					class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] items-start justify-start gap-4"
+				>
+					<figure class="aspect-video w-full flex-1 overflow-hidden">
 						<img src="https://placehold.co/400" alt="" class="h-full w-full object-cover" />
 					</figure>
-					<p class="min-w-[400px] max-w-[60ch] flex-1">
+					<p class="flex-1">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur vitae porro ab
 						repellendus? Culpa quis minima illum, iure, doloribus fuga, reprehenderit molestiae non
 						repellat inventore repellendus. Obcaecati maiores mollitia earum.
