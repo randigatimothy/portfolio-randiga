@@ -1,0 +1,5 @@
+.underline,
+.hover\:underline {
+	text-decoration-style: dashed;
+	text-underline-offset: 10%;
+}
