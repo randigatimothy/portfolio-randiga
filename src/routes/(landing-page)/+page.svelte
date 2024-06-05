@@ -9,7 +9,7 @@
 <div class="flex flex-col items-center gap-24 px-4 py-16 md:gap-64 md:py-64" data-scroll-section>
 	<!-- intro -->
 
-	<div class="flex flex-col gap-8 px-4 md:items-center">
+	<div class="flex flex-col gap-8 md:items-center md:px-4">
 		<h1
 			class="z-[1] flex flex-col font-display text-5xl font-semibold leading-tight text-muted-foreground md:gap-4 md:text-8xl"
 		>
@@ -19,7 +19,7 @@
 		</h1>
 
 		<div
-			class="z-[0] max-w-screen-sm overflow-hidden rounded-3xl p-2 grayscale transition-all duration-1000 hover:filter-none"
+			class="z-[0] max-w-screen-sm overflow-hidden rounded-3xl grayscale transition-all duration-1000 hover:filter-none md:p-2"
 		>
 			<img
 				src={avatar}

@@ -20,7 +20,10 @@
 			<ArticleTitle title={data.frontmatter.title} />
 			<ArticleMeta author={data.frontmatter.author} date={data.frontmatter.date} />
 		</div>
-		<img src={data.frontmatter?.image} alt="" class="h-full w-full rounded-xl object-cover" />
+
+		<div class="flex h-full flex-1 items-center overflow-hidden rounded-xl">
+			<img src={data.frontmatter?.image} alt="" class=" h-full w-full object-cover" />
+		</div>
 	</div>
 
 	<div class="flex flex-col gap-4 pb-48 leading-relaxed">
