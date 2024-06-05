@@ -10,14 +10,20 @@
 	];
 </script>
 
-<div class="flex flex-col gap-16 py-8">
+<div class="flex flex-col items-center gap-16 py-8" data-scroll-section>
 	<!-- intro -->
 
-	<div class="flex flex-col gap-4 px-4">
-		<h1 class="font-display text-4xl font-semibold">Dr. Randiga T.H.</h1>
+	<div class="flex flex-col px-4 py-16 md:items-center md:py-36">
+		<h1
+			class="font-display text-6xl font-semibold leading-tight text-muted-foreground md:text-8xl"
+			data-scroll
+			data-scroll-speed="-0.5"
+		>
+			Dr. <br /> Randiga <br /> T.H.
+		</h1>
 
 		<div
-			class="max-w-screen-sm overflow-hidden border p-2 grayscale transition-all duration-1000 hover:filter-none"
+			class="z-[0] max-w-screen-sm overflow-hidden border p-2 grayscale transition-all duration-1000 hover:filter-none"
 		>
 			<img
 				src={avatar}
@@ -26,10 +32,10 @@
 			/>
 		</div>
 
-		<p class="max-w-[60ch]">
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione excepturi delectus
-			consectetur, commodi error voluptate reprehenderit odit alias mollitia fugit, temporibus nulla
-			facere molestias hic deserunt. Iusto, modi deserunt. Cupiditate?
+		<p class="max-w-[60ch] pt-8">
+			I am a highly motivated individual with a meticulous sense of organization and maturity. A
+			graduate of Bachelor of Pharmacy, I have a keen interest in patient advocacy and education,
+			medication therapy management and in the future, cancer research.
 		</p>
 	</div>
 
@@ -38,8 +44,8 @@
 	<div class="flex flex-col gap-8">
 		{#each sections as { sectionName, contents }}
 			<div class="flex flex-col gap-4 px-4">
-				<div class="sticky top-[73px] z-[1] border-b bg-background py-4">
-					<h2 class="font-display text-4xl font-semibold md:text-6xl">{sectionName}</h2>
+				<div class="sticky top-[96px] z-[1] border-b bg-background py-4">
+					<h2 class="font-display text-2xl font-semibold md:text-6xl">{sectionName}</h2>
 				</div>
 
 				{#each contents.slice(0, 4) as c}
