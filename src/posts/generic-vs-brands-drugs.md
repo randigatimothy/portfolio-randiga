@@ -4,9 +4,12 @@ description: 'Confused about generic vs. brand-name drugs? This blog post explai
 author: 'Randiga'
 date: '2024-06-06'
 published: true
+image: 'https://images.pexels.com/photos/6228273/pexels-photo-6228273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 ---
 
 ## The Balancing Act: Generic vs. Brand Name Drugs in Healthcare
+
+---
 
 As a pharmacist, I often have conversations with patients about their medications, and a common question that arises is the choice between generic and brand-name drugs. Both have their pros and cons, and understanding the differences is crucial for making informed decisions about your healthcare.
 

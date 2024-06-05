@@ -6,12 +6,12 @@
 	const sections = [{ sectionName: 'Blog posts', contents: blog }];
 </script>
 
-<div class="flex flex-col items-center gap-64 py-8" data-scroll-section>
+<div class="flex flex-col items-center gap-24 px-4 py-16 md:gap-64 md:py-64" data-scroll-section>
 	<!-- intro -->
 
-	<div class="flex flex-col px-4 pt-12 md:items-center md:pt-24">
+	<div class="flex flex-col gap-8 px-4 md:items-center">
 		<h1
-			class="z-[1] flex flex-col gap-4 font-display text-6xl font-semibold leading-tight text-muted-foreground md:text-8xl"
+			class="z-[1] flex flex-col font-display text-5xl font-semibold leading-tight text-muted-foreground md:gap-4 md:text-8xl"
 		>
 			<span data-scroll data-scroll-speed="0.2" data-scroll-delay="1"> Dr. </span>
 			<span data-scroll data-scroll-speed="0.13" data-scroll-delay="2"> Randiga </span>
@@ -31,12 +31,17 @@
 
 	<div class="flex flex-col gap-8">
 		<div>
-			<h6 class="text-md uppercase leading-tight text-muted-foreground">Who am I</h6>
+			<h6
+				data-scroll
+				data-scroll-speed="0.1"
+				class="text-md uppercase leading-tight text-muted-foreground"
+			>
+				Who am I
+			</h6>
 			<p
 				data-scroll
-				data-scroll-css-progress
-				data-scroll-class="c-scroll-opacity"
-				class="max-w-[60ch] pt-8 indent-48 text-3xl font-semibold leading-snug md:text-6xl
+				data-scroll-speed="0.05"
+				class="max-w-[60ch] pt-8 text-3xl font-semibold leading-snug md:indent-48 md:text-6xl
       "
 			>
 				A Pharmacist with a passion for patient care. Skilled in medication management and advocacy,
@@ -76,7 +81,7 @@
 		{#each sections as { sectionName, contents }}
 			<div class="flex flex-col gap-4 px-4">
 				<div class="sticky top-[96px] z-[1] border-b bg-background py-4">
-					<h2 class="font-display text-2xl font-semibold md:text-6xl">{sectionName}</h2>
+					<h2 class="font-display text-2xl font-semibold sm:text-4xl md:text-6xl">{sectionName}</h2>
 				</div>
 
 				{#each contents.slice(0, 3) as c}

@@ -7,7 +7,7 @@
 </script>
 
 {#key $page}
-	<div class="relative bg-background text-foreground" use:createScroll>
+	<div class="relative scroll-smooth bg-background text-foreground" use:createScroll>
 		<header class="sticky top-0 z-10 bg-inherit">
 			<slot name="header" />
 		</header>

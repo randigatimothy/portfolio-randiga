@@ -12,13 +12,13 @@
 
 {#if slug}
 	<h3 class="heading font-bold" class:large={!slug} {id}>
-		<a {href}>
+		<a {href} class="hover:text-inherit hover:underline">
 			{title}
 		</a>
 	</h3>
 {:else}
 	<h2 class="heading font-bold" class:large={!slug} {id}>
-		<a {href}>
+		<a {href} class="hover:text-inherit hover:underline">
 			{title}
 		</a>
 	</h2>

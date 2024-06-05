@@ -4,9 +4,12 @@ description: 'AI has the potential to revolutionize pharmaceutical research. Thi
 author: 'Randiga'
 date: '2024-06-06'
 published: true
+image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 ---
 
 ## The Future of Healing: AI's Disruptive Role in Pharmaceutical Research
+
+---
 
 As a pharmacist, I'm constantly amazed by the advancements in our field. New discoveries and treatment options emerge all the time, but the process of bringing them to patients can be slow and arduous. That's where Artificial Intelligence (AI) comes in, offering a revolution in pharmaceutical research with the potential to accelerate breakthroughs and transform patient care.
 

@@ -2,10 +2,11 @@
 	import PageContent from './PageContent.svelte';
 </script>
 
-<footer class="bg-black px-4 py-16 text-white">
+<footer class="bg-foreground px-4 py-36 text-white">
 	<PageContent>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. In laudantium repudiandae quis facere
-		ipsam ducimus eveniet inventore adipisci suscipit dignissimos! Aut laborum voluptatum quae
-		autem. Sapiente similique eaque aperiam minima?
+		<div class="flex flex-col gap-4">
+			<h6 class="text-3xl font-bold uppercase">Write to me</h6>
+			<a href="mailto:hrandiga126@gmail.com" class="text-background"> hrandiga@gmail.com</a>
+		</div>
 	</PageContent>
 </footer>

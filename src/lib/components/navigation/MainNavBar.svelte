@@ -31,7 +31,7 @@
 				</a>
 			{/each}
 		</nav>
-		<Button>Reach out</Button>
+		<Button href="mailto:hrandiga126@gmail.com">Reach out</Button>
 	</div>
 </PageContent>
 

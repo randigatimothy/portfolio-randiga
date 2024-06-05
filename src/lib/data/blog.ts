@@ -11,7 +11,7 @@ export default [
 			'AI Disrupts Drug Discovery: Can it revolutionize healthcare? This article explores how Artificial Intelligence is transforming pharmaceutical research by accelerating drug discovery, optimizing drug design, and paving the way for personalized medicine. ',
 	},
 	{
-		id: 'generic-vs-brand-drugs',
+		id: 'generic-vs-brands-drugs',
 		title: 'The Balancing Act: Generic vs. Brand Name Drugs in Healthcare',
 		date: '2024-06-06',
 		image:
