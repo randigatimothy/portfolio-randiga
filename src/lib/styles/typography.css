@@ -3,3 +3,15 @@
 	text-decoration-style: dashed;
 	text-underline-offset: 10%;
 }
+
+ul li {
+	list-style: disc;
+}
+
+ol li {
+	list-style: upper-latin;
+}
+
+li {
+	margin-inline: 2rem;
+}

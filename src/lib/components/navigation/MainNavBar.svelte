@@ -16,7 +16,7 @@
 
 <PageContent>
 	<div class="flex w-full max-w-full items-center justify-between px-8 py-8">
-		<nav class="flex-1 gap-8">
+		<nav class="flex flex-1 gap-4">
 			{#each routes.mainNav as { name, href }}
 				<a {href} class="relative p-2 font-semibold">
 					<span class={isCurrentPage(href) ? 'text-primary' : ''}>{name} </span>

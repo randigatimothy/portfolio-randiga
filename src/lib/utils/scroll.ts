@@ -1,3 +1,10 @@
 import LocomotiveScroll from 'locomotive-scroll';
 
-export const scroll = new LocomotiveScroll();
+export const createScroll = function (_node: HTMLElement | undefined) {
+	return new LocomotiveScroll({
+		smooth: true,
+		smartphone: {
+			smooth: true,
+		},
+	});
+};

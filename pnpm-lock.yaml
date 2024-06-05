@@ -17,9 +17,6 @@ importers:
       locomotive-scroll:
         specifier: 5.0.0-beta.13
         version: 5.0.0-beta.13
-      svelte-locomotive-scroll:
-        specifier: ^0.0.5
-        version: 0.0.5(locomotive-scroll@5.0.0-beta.13)(svelte@5.0.0-next.148)
       tailwind-merge:
         specifier: ^2.3.0
         version: 2.3.0
@@ -45,6 +42,9 @@ importers:
       '@types/eslint':
         specifier: ^8.56.7
         version: 8.56.10
+      '@types/locomotive-scroll':
+        specifier: ^4.1.3
+        version: 4.1.3
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -480,6 +480,9 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
+  '@types/locomotive-scroll@4.1.3':
+    resolution: {integrity: sha512-mo8BIiFA2OOyB/Mmv0U0WL9AjBisUdUi0AMeA6hcMODEFLZvwk0UUPM+yKzMnwfpYxC/LKNiZKXO7LQp+08mMg==}
+
   '@types/pug@2.0.10':
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
 
@@ -825,9 +828,6 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
 
-  ev-emitter@2.1.2:
-    resolution: {integrity: sha512-jQ5Ql18hdCQ4qS+RCrbLfz1n+Pags27q5TwMKvZyhp5hh2UULUYZUy1keqj6k6SYsdqIYjnmz7xyyEY0V67B8Q==}
-
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
 
@@ -936,9 +936,6 @@ packages:
   ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
-
-  imagesloaded@5.0.0:
-    resolution: {integrity: sha512-/0JGSubc1MTCoDKVmonLHgbifBWHdyLkun+R/151E1c5n79hiSxcd7cB7mPXFgojYu8xnRZv7GYxzKoxW8BetQ==}
 
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -1061,9 +1058,6 @@ packages:
 
   lodash.castarray@4.4.0:
     resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
-
-  lodash.debounce@4.0.8:
-    resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -1509,12 +1503,6 @@ packages:
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     peerDependencies:
       svelte: ^3.19.0 || ^4.0.0
-
-  svelte-locomotive-scroll@0.0.5:
-    resolution: {integrity: sha512-ZmoMzfURheyKToH/0uAI4o0Hni65Xjec11HxxBHoptmmX14nXBT1f9Nl7mlndFCg+F+gh8dowIJdL155ULT8pw==}
-    peerDependencies:
-      locomotive-scroll: ^4.1.1
-      svelte: ^3.44.0
 
   svelte-preprocess@5.1.4:
     resolution: {integrity: sha512-IvnbQ6D6Ao3Gg6ftiM5tdbR6aAETwjhHV+UKGf5bHGYR69RQvF1ho0JKPcbUON4vy4R7zom13jPjgdOWCQ5hDA==}
@@ -2023,6 +2011,8 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
+  '@types/locomotive-scroll@4.1.3': {}
+
   '@types/pug@2.0.10': {}
 
   '@types/unist@2.0.10': {}
@@ -2420,8 +2410,6 @@ snapshots:
 
   esutils@2.0.3: {}
 
-  ev-emitter@2.1.2: {}
-
   fast-deep-equal@3.1.3: {}
 
   fast-glob@3.3.2:
@@ -2532,10 +2520,6 @@ snapshots:
 
   ignore@5.3.1: {}
 
-  imagesloaded@5.0.0:
-    dependencies:
-      ev-emitter: 2.1.2
-
   import-fresh@3.3.0:
     dependencies:
       parent-module: 1.0.1
@@ -2634,8 +2618,6 @@ snapshots:
       - react-dom
 
   lodash.castarray@4.4.0: {}
-
-  lodash.debounce@4.0.8: {}
 
   lodash.isplainobject@4.0.6: {}
 
@@ -3008,13 +2990,6 @@ snapshots:
 
   svelte-hmr@0.16.0(svelte@5.0.0-next.148):
     dependencies:
-      svelte: 5.0.0-next.148
-
-  svelte-locomotive-scroll@0.0.5(locomotive-scroll@5.0.0-beta.13)(svelte@5.0.0-next.148):
-    dependencies:
-      imagesloaded: 5.0.0
-      locomotive-scroll: 5.0.0-beta.13
-      lodash.debounce: 4.0.8
       svelte: 5.0.0-next.148
 
   svelte-preprocess@5.1.4(postcss-load-config@4.0.2(postcss@8.4.38))(postcss@8.4.38)(svelte@5.0.0-next.148)(typescript@5.4.5):
