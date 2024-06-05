@@ -14,7 +14,7 @@
 </script>
 
 <div class="flex flex-col items-start px-4">
-	<div class="flex h-[calc(100vh-104px)] flex-col gap-8 pb-12">
+	<div class="flex h-[calc(100dvh-104px)] flex-col gap-8 pb-12">
 		<PageHead title={data.frontmatter.title} description={data.frontmatter.description} />
 		<div class="flex flex-col gap-2">
 			<ArticleTitle title={data.frontmatter.title} />
