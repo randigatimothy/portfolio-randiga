@@ -5,6 +5,7 @@
 
 	import { page } from '$app/stores';
 	import { Button } from '../ui/button';
+	import ModeSwitcher from '../layout/ModeSwitcher.svelte';
 
 	$: currentPage = $page.url.pathname;
 
@@ -15,7 +16,7 @@
 </script>
 
 <PageContent>
-	<div class="flex w-full max-w-full items-center justify-between px-8 py-8">
+	<div class="flex w-full max-w-full items-center justify-between gap-4 px-2 py-8 md:px-8">
 		<nav class="flex flex-1 gap-4">
 			{#each routes.mainNav as { name, href }}
 				<a {href} class="relative p-2 font-semibold">
@@ -31,7 +32,8 @@
 				</a>
 			{/each}
 		</nav>
-		<Button href="mailto:hrandiga126@gmail.com">Reach out</Button>
+		<Button href="mailto:hrandiga126@gmail.com" class="hidden md:block">Reach out</Button>
+		<ModeSwitcher />
 	</div>
 </PageContent>
 
