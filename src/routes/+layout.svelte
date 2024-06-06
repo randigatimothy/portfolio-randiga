@@ -7,9 +7,14 @@
 	import MainNavBar from '@/lib/components/navigation/MainNavBar.svelte';
 	import NavigationTransition from '@/lib/components/transitions/NavigationTransition.svelte';
 	import WebShell from '@/lib/components/layout/WebShell.svelte';
+	import { ModeWatcher } from 'mode-watcher';
+	import ModeSwitcher from '@/lib/components/layout/ModeSwitcher.svelte';
 </script>
 
 <NavigationTransition />
+<ModeWatcher />
+
+<ModeSwitcher />
 
 <WebShell>
 	<MainNavBar slot="header" />

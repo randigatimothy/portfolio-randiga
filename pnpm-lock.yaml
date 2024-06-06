@@ -17,6 +17,9 @@ importers:
       locomotive-scroll:
         specifier: 5.0.0-beta.13
         version: 5.0.0-beta.13
+      mode-watcher:
+        specifier: ^0.3.0
+        version: 0.3.0(svelte@5.0.0-next.148)
       tailwind-merge:
         specifier: ^2.3.0
         version: 2.3.0
@@ -60,6 +63,9 @@ importers:
       globals:
         specifier: ^15.0.0
         version: 15.3.0
+      lucide-svelte:
+        specifier: ^0.383.0
+        version: 0.383.0(svelte@5.0.0-next.148)
       mdsvex:
         specifier: ^0.11.0
         version: 0.11.0(svelte@5.0.0-next.148)
@@ -1069,6 +1075,11 @@ packages:
     resolution: {integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==}
     engines: {node: 14 || >=16.14}
 
+  lucide-svelte@0.383.0:
+    resolution: {integrity: sha512-jA4fd9v1gLuE/iNszC7VyIexDnWX06bYpFFTPfBwk0FKh3Paf7FULgotQ8UUY1Lsr6JIMWASh7zKhI2f1bePFw==}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5.0.0-next.42
+
   magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
 
@@ -1106,6 +1117,11 @@ packages:
   mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
     hasBin: true
+
+  mode-watcher@0.3.0:
+    resolution: {integrity: sha512-k8jjuTx94HaaRKWO6JDf8wL761hFatrTIHJKl+E+3JWcnv+GnMBH062zcLsy0lbCI3n7RZxxHaWi66auFnUO4g==}
+    peerDependencies:
+      svelte: ^4.0.0
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -2625,6 +2641,10 @@ snapshots:
 
   lru-cache@10.2.2: {}
 
+  lucide-svelte@0.383.0(svelte@5.0.0-next.148):
+    dependencies:
+      svelte: 5.0.0-next.148
+
   magic-string@0.30.10:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -2661,6 +2681,10 @@ snapshots:
   mkdirp@0.5.6:
     dependencies:
       minimist: 1.2.8
+
+  mode-watcher@0.3.0(svelte@5.0.0-next.148):
+    dependencies:
+      svelte: 5.0.0-next.148
 
   mri@1.2.0: {}
 
