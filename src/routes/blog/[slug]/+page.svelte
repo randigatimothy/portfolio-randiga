@@ -1,32 +1,31 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-	import type { SvelteComponentTyped } from 'svelte/internal';
+	import { page } from '$app/stores';
+	import { useQuery } from '@sveltestack/svelte-query';
 
-	import PageHead from './components/PageHead.svelte';
-	import ArticleTitle from './components/ArticleTitle.svelte';
 	import ArticleMeta from './components/ArticleMeta.svelte';
-	import { Button } from '@/lib/components/ui/button';
+	import ArticleTitle from './components/ArticleTitle.svelte';
+	import PageHead from './components/PageHead.svelte';
+	import PortableText from '@/lib/components/shared/PortableText.svelte';
 
-	export let data: PageData;
+	import { formatDate } from '@/lib/utils/date';
+	import { getBlogPost } from '@/lib/utils/sanity';
 
-	type C = $$Generic<typeof SvelteComponentTyped<any, any, any>>;
-	$: component = data.component as unknown as C;
+	$: slug = $page.params.slug;
+
+	const query = useQuery(['blog_post', slug], async () => await getBlogPost(slug));
 </script>
 
-<div class="flex flex-col items-start px-4">
-	<div class="flex h-[calc(100dvh-104px)] flex-col gap-8 pb-12">
-		<PageHead title={data.frontmatter.title} description={data.frontmatter.description} />
-		<div class="flex flex-col gap-2">
-			<ArticleTitle title={data.frontmatter.title} />
-			<ArticleMeta author={data.frontmatter.author} date={data.frontmatter.date} />
+{#if $query.data}
+	<div class="flex flex-col items-start px-4 pb-48">
+		<div class="flex h-[calc(100dvh-104px)] flex-col gap-8 pb-12">
+			<PageHead title={$query.data?.title} description={$query.data?.description} />
+			<ArticleTitle title={$query.data?.title} id={slug} />
+			<div class="flex h-full flex-1 items-center overflow-hidden rounded-xl">
+				<img src={$query.data?.coverImage} alt="" class="h-full w-full object-cover" />
+			</div>
+			<!-- TODO add author to articles -->
+			<ArticleMeta author="Dr. Randiga T.H." date={formatDate($query.data?.publishedAt)} />
 		</div>
-
-		<div class="flex h-full flex-1 items-center overflow-hidden rounded-xl">
-			<img src={data.frontmatter?.image} alt="" class=" h-full w-full object-cover" />
-		</div>
+		<PortableText value={$query.data?.body} />
 	</div>
-
-	<div class="flex flex-col gap-4 pb-48 leading-relaxed">
-		<svelte:component this={component} />
-	</div>
-</div>
+{/if}

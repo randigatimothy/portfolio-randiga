@@ -1,6 +1,6 @@
 <script>
 	import avatar from '@/lib/assets/randiga.jpeg';
-	import BlogItem from '@/lib/components/shared/BlogItem.svelte';
+	import BlogList from '@/lib/components/shared/BlogList.svelte';
 	import blog from '@/lib/data/blog';
 
 	const sections = [{ sectionName: 'Blog posts', contents: blog }];
@@ -24,7 +24,7 @@
 			<img
 				src={avatar}
 				alt=""
-				class="h-full w-full rounded-[inherit] object-cover transition-all duration-1000 hover:scale-[1.25]"
+				class="hover:rounded-6xl h-full w-full rounded-[inherit] object-cover transition-all duration-1000 hover:scale-[1.25]"
 			/>
 		</div>
 	</div>
@@ -83,10 +83,7 @@
 				<div class="sticky top-[96px] z-[1] border-b bg-background py-4">
 					<h2 class="font-display text-2xl font-semibold sm:text-4xl md:text-6xl">{sectionName}</h2>
 				</div>
-
-				{#each contents.slice(0, 3) as c}
-					<BlogItem data={c} />
-				{/each}
+				<BlogList max={1} />
 			</div>
 		{/each}
 	</div>

@@ -8,14 +8,19 @@
 	import NavigationTransition from '@/lib/components/transitions/NavigationTransition.svelte';
 	import WebShell from '@/lib/components/layout/WebShell.svelte';
 	import { ModeWatcher } from 'mode-watcher';
+	import { QueryClientProvider } from '@sveltestack/svelte-query';
+
+	import { queryClient } from '@/lib/utils/query';
 </script>
 
 <NavigationTransition />
 <ModeWatcher />
 
-<WebShell>
-	<MainNavBar slot="header" />
-	<main slot="main">
-		<slot />
-	</main>
-</WebShell>
+<QueryClientProvider client={queryClient}>
+	<WebShell>
+		<MainNavBar slot="header" />
+		<main slot="main">
+			<slot />
+		</main>
+	</WebShell>
+</QueryClientProvider>

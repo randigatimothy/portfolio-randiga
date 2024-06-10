@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Button } from '@/lib/components/ui/button';
+	import { formatDate } from '@/lib/utils/date';
+	import { ChevronRight } from 'lucide-svelte';
 
 	let c: any;
 
@@ -7,21 +8,26 @@
 </script>
 
 <a
-	href="/blog/{c?.id}"
-	class="content-card grid items-start justify-start gap-4 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]"
+	href="/blog/{c?.slug?.current}"
+	class="content-card group grid gap-4 md:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]"
 >
-	<figure class="aspect-video w-full flex-1 overflow-hidden">
+	<figure class="flex aspect-video h-full w-full flex-1 items-center overflow-hidden bg-red-700">
 		<img
-			src={c?.image}
+			src={c?.coverImage}
 			alt=""
-			class="h-full w-full object-cover grayscale transition-all duration-1000 hover:scale-[1.25] hover:grayscale-0"
+			class="h-full w-full object-cover grayscale transition-all duration-1000 group-hover:scale-[1.25] group-hover:grayscale-0"
 		/>
 	</figure>
 	<div class="grid flex-1 gap-4 p-4">
 		<h5 class="text-xl font-bold text-primary hover:underline">{c?.title}</h5>
+		<span class="text-sm text-muted-foreground">Published on {formatDate(c?.publishedAt)}</span>
 		<p class="max-w-[60ch] text-muted-foreground">
-			{c?.caption}
+			{c?.description}
 		</p>
-		<Button size="lg" variant="outline" href="/blog/{c?.id}" class="w-fit">Read</Button>
+		<div class="flex justify-end">
+			<ChevronRight
+				class="text-muted-foreground transition-all  duration-1000 group-hover:-translate-x-1 group-hover:opacity-100 md:opacity-0"
+			/>
+		</div>
 	</div>
 </a>
