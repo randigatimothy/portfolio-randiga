@@ -6,7 +6,7 @@
 	<PageContent>
 		<div class="flex flex-col gap-4">
 			<h6 class="text-3xl font-bold uppercase">Write to me</h6>
-			<a href="mailto:hrandiga126@gmail.com" class="text-background"> hrandiga@gmail.com</a>
+			<a href="mailto:randigath@gmail.com" class="text-background"> randigath@gmail.com</a>
 		</div>
 	</PageContent>
 </footer>

@@ -83,7 +83,7 @@
 				<div class="sticky top-[96px] z-[1] border-b bg-background py-4">
 					<h2 class="font-display text-2xl font-semibold sm:text-4xl md:text-6xl">{sectionName}</h2>
 				</div>
-				<BlogList max={1} />
+				<BlogList max={3} />
 			</div>
 		{/each}
 	</div>
