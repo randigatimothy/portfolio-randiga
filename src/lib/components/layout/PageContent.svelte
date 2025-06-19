@@ -1,3 +1,3 @@
-<section class="mx-auto w-full max-w-screen-lg">
+<section class="mx-auto w-full max-w-(--breakpoint-lg)">
 	<slot />
 </section>

@@ -4,4 +4,6 @@
 	export let value;
 </script>
 
-<PortableText {value} />
+<div class="prose lg:prose-xl dark:**:text-foreground/70">
+	<PortableText {value} />
+</div>
