@@ -16,10 +16,10 @@
 			{:else if index === max}
 				<a
 					href="/blog"
-					class="group flex w-fit items-center gap-2 border-[2px] border-dashed border-transparent italic transition-all hover:gap-1 hover:border-b-foreground"
+					class="group flex w-fit items-center gap-2 border-2 border-dashed border-transparent italic transition-all hover:gap-1 hover:border-b-foreground"
 				>
 					<span> See all posts </span>
-					<ArrowRight class="h-[1rem]" />
+					<ArrowRight class="h-4" />
 				</a>
 			{/if}
 		{/each}

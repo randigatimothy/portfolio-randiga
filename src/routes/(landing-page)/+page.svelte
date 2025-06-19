@@ -11,7 +11,7 @@
 
 	<div class="flex flex-col gap-8 md:items-center md:px-4">
 		<h1
-			class="z-[1] flex flex-col font-display text-5xl font-semibold leading-tight text-muted-foreground md:gap-4 md:text-8xl"
+			class="z-1 flex flex-col font-display text-5xl font-semibold leading-tight text-muted-foreground md:gap-4 md:text-8xl"
 		>
 			<span data-scroll data-scroll-speed="0.2" data-scroll-delay="1"> Dr. </span>
 			<span data-scroll data-scroll-speed="0.13" data-scroll-delay="2"> Randiga </span>
@@ -19,7 +19,7 @@
 		</h1>
 
 		<div
-			class="z-[0] max-w-screen-sm overflow-hidden rounded-3xl grayscale transition-all duration-1000 hover:filter-none md:p-2"
+			class="z-0 max-w-(--breakpoint-sm) overflow-hidden rounded-3xl grayscale transition-all duration-1000 hover:filter-none md:p-2"
 		>
 			<img
 				src={avatar}
@@ -50,7 +50,7 @@
 		</div>
 		<hr />
 
-		<div class="flex max-w-screen-md flex-col gap-4">
+		<div class="flex max-w-(--breakpoint-md) flex-col gap-4">
 			<p>
 				My path to pharmacy wasn't typical. Driven by a desire to bridge the gap between traditional
 				medicine and modern science, I earned my Bachelor's in Pharmacy and dove into the
@@ -80,7 +80,7 @@
 	<div class="flex w-full flex-col gap-8">
 		{#each sections as { sectionName, contents }}
 			<div class="flex flex-col gap-4 px-4">
-				<div class="sticky top-[96px] z-[1] border-b bg-background py-4">
+				<div class="sticky top-[96px] z-1 border-b bg-background py-4">
 					<h2 class="font-display text-2xl font-semibold sm:text-4xl md:text-6xl">{sectionName}</h2>
 				</div>
 				<BlogList max={3} />
