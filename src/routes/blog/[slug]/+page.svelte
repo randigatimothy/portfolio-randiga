@@ -20,7 +20,7 @@
 			<PageHead title={$query.data?.title} description={$query.data?.description} />
 			<ArticleTitle title={$query.data?.title} id={slug} />
 			<div class="flex h-full flex-1 items-center overflow-hidden rounded-xl">
-				<img src={$query.data?.coverImage} alt="" class="h-full w-full object-cover" />
+				<img src={$query.data?.coverImage} alt="" class="min-h-full w-full object-cover" />
 			</div>
 			<!-- TODO add author to articles -->
 			<ArticleMeta author="Dr. Randiga T.H." date={formatDate($query.data?.publishedAt)} />

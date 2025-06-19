@@ -15,13 +15,13 @@
 		<img
 			src={c?.coverImage}
 			alt=""
-			class="h-full w-full object-cover grayscale transition-all duration-1000 group-hover:scale-[1.25] group-hover:grayscale-0"
+			class="min-h-full w-full object-cover grayscale transition-all duration-1000 group-hover:scale-[1.25] group-hover:grayscale-0"
 		/>
 	</figure>
 	<div class="grid flex-1 gap-4 p-4">
-		<h5 class="text-xl font-bold text-primary hover:underline">{c?.title}</h5>
-		<span class="text-sm text-muted-foreground">Published on {formatDate(c?.publishedAt)}</span>
-		<p class="max-w-[60ch] text-muted-foreground">
+		<h5 class="text-primary text-xl font-bold hover:underline">{c?.title}</h5>
+		<span class="text-muted-foreground text-sm">Published on {formatDate(c?.publishedAt)}</span>
+		<p class="text-muted-foreground max-w-[60ch]">
 			{c?.description}
 		</p>
 		<div class="flex justify-end">
