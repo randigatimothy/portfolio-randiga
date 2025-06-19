@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '@/lib/utils/date';
-	import { ChevronRight } from 'lucide-svelte';
+	import { ChevronRight } from '@lucide/svelte';
 
 	let c: any;
 
