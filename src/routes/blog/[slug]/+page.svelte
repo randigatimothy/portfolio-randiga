@@ -10,9 +10,8 @@
 	import { formatDate } from '@/lib/utils/date';
 	import { getBlogPost } from '@/lib/utils/sanity';
 
-	$: slug = $page.params.slug;
-
-	const query = useQuery(['blog_post', slug], async () => await getBlogPost(slug));
+	const slug = $derived($page.params.slug);
+	const query = $derived(useQuery(['blog_post', slug], async () => await getBlogPost(slug)));
 </script>
 
 {#if $query.data}
