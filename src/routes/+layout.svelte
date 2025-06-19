@@ -11,6 +11,8 @@
 	import { QueryClientProvider } from '@sveltestack/svelte-query';
 
 	import { queryClient } from '@/lib/utils/query';
+
+	const { children } = $props();
 </script>
 
 <NavigationTransition />
@@ -20,7 +22,7 @@
 	<WebShell>
 		<MainNavBar slot="header" />
 		<main slot="main">
-			<slot />
+			{@render children?.()}
 		</main>
 	</WebShell>
 </QueryClientProvider>

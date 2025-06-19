@@ -10,9 +10,8 @@
 	import { formatDate } from '@/lib/utils/date';
 	import { getBlogPost } from '@/lib/utils/sanity';
 
-	$: slug = $page.params.slug;
-
-	const query = useQuery(['blog_post', slug], async () => await getBlogPost(slug));
+	const slug = $derived($page.params.slug);
+	const query = $derived(useQuery(['blog_post', slug], async () => await getBlogPost(slug)));
 </script>
 
 {#if $query.data}
@@ -21,7 +20,7 @@
 			<PageHead title={$query.data?.title} description={$query.data?.description} />
 			<ArticleTitle title={$query.data?.title} id={slug} />
 			<div class="flex h-full flex-1 items-center overflow-hidden rounded-xl">
-				<img src={$query.data?.coverImage} alt="" class="h-full w-full object-cover" />
+				<img src={$query.data?.coverImage} alt="" class="min-h-full w-full object-cover" />
 			</div>
 			<!-- TODO add author to articles -->
 			<ArticleMeta author="Dr. Randiga T.H." date={formatDate($query.data?.publishedAt)} />

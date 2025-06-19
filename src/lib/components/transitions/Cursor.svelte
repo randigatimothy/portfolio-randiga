@@ -43,7 +43,7 @@
 
 <div
 	use:cursorAction
-	class="pointer-events-none fixed z-[99999] rounded-full bg-black mix-blend-soft-light grayscale"
+	class="pointer-events-none fixed z-99999 rounded-full bg-black mix-blend-soft-light grayscale"
 	style="height: {height}px; width: {height}px;"
 ></div>
 
