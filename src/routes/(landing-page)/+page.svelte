@@ -15,7 +15,7 @@
 		>
 			<span data-scroll data-scroll-speed="0.2" data-scroll-delay="1"> Randiga </span>
 			<span data-scroll data-scroll-speed="0.13" data-scroll-delay="2"> Timothy </span>
-			<span data-scroll data-scroll-speed="0.06" data-scroll-delay="2"> B.H </span>
+			<span data-scroll data-scroll-speed="0.06" data-scroll-delay="2"> B.H. </span>
 		</h1>
 
 		<div
