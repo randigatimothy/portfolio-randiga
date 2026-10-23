@@ -44,8 +44,7 @@
 				class="max-w-[60ch] pt-8 text-3xl font-semibold leading-snug md:indent-48 md:text-6xl
       "
 			>
-				A Pharmacist with a passion for patient care. Skilled in medication management and advocacy,
-				with a future focus on cancer research.
+				A Pharmacist. A scientist. Maybe a teacher?
 			</p>
 		</div>
 		<hr />
@@ -59,19 +58,9 @@
             lift others as they climb, which is why peer leadershipis such a big part of my journey. Welcome to my corner of the internet :).
 			</p>
 			<p>
-				Beyond academics, I craved practical experience. Internships at a children's hospital, a
-				pharmaceutical lab, and a quality control facility exposed me to medication preparation,
-				manufacturing, and quality control. Witnessing the resilience of young patients and the
-				meticulous processes behind safe medications fueled my passion for patient care and the
-				entire healthcare system.
 			</p>
 			<p>
-				My leadership extends beyond technical skills. I actively participate in the Young
-				Pharmacists Group, advocating for professional development and policy changes. Leading a
-				team at the Millenium Campus Network and serving on committees within the Pharmacy Students'
-				Association honed my collaboration, communication, and organizational skills. These
-				experiences have shaped me into a well-rounded pharmacist with a passion for patient care,
-				research, and advocacy.
+				
 			</p>
 		</div>
 	</div>
