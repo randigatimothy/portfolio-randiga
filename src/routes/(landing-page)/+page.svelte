@@ -52,10 +52,11 @@
 
 		<div class="max-w-(--breakpoint-md) flex flex-col gap-4">
 			<p>
-				My path to pharmacy wasn't typical. Driven by a desire to bridge the gap between traditional
-				medicine and modern science, I earned my Bachelor's in Pharmacy and dove into the
-				complexities of cancer treatment through research. This solidified my goal to contribute to
-				oncology research in the future.
+					Dear Reader,
+            I am a Randiga Harnes, a pharmacist that can't stop asking "why?" I hold big,bold dreams of seeing the world,
+            while advancing the care for cancer patients around the world. I am currently pursuing my Masters degree in Cancer Science. 
+            On here, you will get to see my thoughts, my work and the notes of things I learn. I believe the best healthcare professionals  
+            lift others as they climb, which is why peer leadershipis such a big part of my journey. Welcome to my corner of the internet :).
 			</p>
 			<p>
 				Beyond academics, I craved practical experience. Internships at a children's hospital, a
