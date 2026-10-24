@@ -44,7 +44,7 @@
 				class="max-w-[60ch] pt-8 text-3xl font-semibold leading-snug md:indent-48 md:text-6xl
       "
 			>
-				Pharmacist. Scientist. Teacher
+			Pharmacist. Scientist. Teacher
 			</p>
 		</div>
 		<hr />
