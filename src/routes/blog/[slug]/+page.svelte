@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { useQuery } from '@sveltestack/svelte-query';
 
 	import ArticleMeta from './components/ArticleMeta.svelte';
@@ -10,7 +10,7 @@
 	import { formatDate } from '@/lib/utils/date';
 	import { getBlogPost } from '@/lib/utils/sanity';
 
-	const slug = $derived($page.params.slug);
+	const slug = $derived(page.params.slug);
 	const query = $derived(useQuery(['blog_post', slug], async () => await getBlogPost(slug)));
 </script>
 

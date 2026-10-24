@@ -3,11 +3,11 @@
 	import PageContent from '../layout/PageContent.svelte';
 	import { twMerge } from 'tailwind-merge';
 
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { Button } from '../ui/button';
 	import ModeSwitcher from '../layout/ModeSwitcher.svelte';
 
-	$: currentPage = $page.url.pathname;
+	$: currentPage = page.url.pathname;
 
 	function isCurrentPage(href: string) {
 		if (href === '/') return href === currentPage;
