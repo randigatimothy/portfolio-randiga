@@ -1,12 +1,12 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import Footer from './Footer.svelte';
 	import PageContent from './PageContent.svelte';
 
 	import { createScroll } from '@/lib/utils/scroll';
 </script>
 
-{#key $page}
+{#key page}
 	<div class="relative scroll-smooth bg-background text-foreground" use:createScroll>
 		<header class="sticky top-0 z-10 bg-inherit">
 			<slot name="header" />
