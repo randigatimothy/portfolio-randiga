@@ -44,33 +44,23 @@
 				class="max-w-[60ch] pt-8 text-3xl font-semibold leading-snug md:indent-48 md:text-6xl
       "
 			>
-				A Pharmacist with a passion for patient care. Skilled in medication management and advocacy,
-				with a future focus on cancer research.
+				Pharmacist. Scientist. Teacher
 			</p>
 		</div>
 		<hr />
 
 		<div class="max-w-(--breakpoint-md) flex flex-col gap-4">
 			<p>
-				My path to pharmacy wasn't typical. Driven by a desire to bridge the gap between traditional
-				medicine and modern science, I earned my Bachelor's in Pharmacy and dove into the
-				complexities of cancer treatment through research. This solidified my goal to contribute to
-				oncology research in the future.
+					Dear Reader,
+            I am a Randiga Harnes, a pharmacist that can't stop asking "why?" I hold big,bold dreams of seeing the world,
+            while advancing the care for cancer patients around the world. I am currently pursuing my Masters degree in Cancer Science. 
+            On here, you will get to see my thoughts, my work and the notes of things I learn. I believe the best healthcare professionals  
+            lift others as they climb, which is why peer leadershipis such a big part of my journey. Welcome to my corner of the internet :).
 			</p>
 			<p>
-				Beyond academics, I craved practical experience. Internships at a children's hospital, a
-				pharmaceutical lab, and a quality control facility exposed me to medication preparation,
-				manufacturing, and quality control. Witnessing the resilience of young patients and the
-				meticulous processes behind safe medications fueled my passion for patient care and the
-				entire healthcare system.
 			</p>
 			<p>
-				My leadership extends beyond technical skills. I actively participate in the Young
-				Pharmacists Group, advocating for professional development and policy changes. Leading a
-				team at the Millenium Campus Network and serving on committees within the Pharmacy Students'
-				Association honed my collaboration, communication, and organizational skills. These
-				experiences have shaped me into a well-rounded pharmacist with a passion for patient care,
-				research, and advocacy.
+				
 			</p>
 		</div>
 	</div>
