@@ -52,6 +52,8 @@
 		<div class="max-w-(--breakpoint-md) flex flex-col gap-4">
 			<p>
 					Dear Reader,
+
+
             I am a Randiga Harnes, a pharmacist that can't stop asking "why?" I hold big,bold dreams of seeing the world,
             while advancing the care for cancer patients around the world. I am currently pursuing my Masters degree in Cancer Science. 
             On here, you will get to see my thoughts, my work and the notes of things I learn. I believe the best healthcare professionals  
