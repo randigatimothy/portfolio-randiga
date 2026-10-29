@@ -15,16 +15,20 @@
 </script>
 
 {#if $query.data}
-	<div class="flex flex-col items-start px-4 pb-48">
-		<div class="flex h-[calc(100dvh-104px)] flex-col gap-8 pb-12">
+	<article class="flex w-full flex-col items-start px-6 py-8 pb-48 md:px-12 lg:px-16">
+		<div class="flex min-h-[calc(100dvh-160px)] w-full flex-col gap-8 pb-16">
 			<PageHead title={$query.data?.title} description={$query.data?.description} />
 			<ArticleTitle title={$query.data?.title} id={slug} />
-			<div class="flex h-full flex-1 items-center overflow-hidden rounded-xl">
-				<img src={$query.data?.coverImage} alt="" class="min-h-full w-full object-cover" />
-			</div>
+			{#if $query.data?.coverImage}
+				<div class="flex h-full flex-1 items-center overflow-hidden rounded-xl">
+					<img src={$query.data?.coverImage} alt="" class="min-h-full w-full object-cover" />
+				</div>
+			{/if}
 			<!-- TODO add author to articles -->
 			<ArticleMeta author="Dr. Randiga T.H." date={formatDate($query.data?.publishedAt)} />
 		</div>
-		<PortableText value={$query.data?.body} />
-	</div>
+		<div class="w-full pt-8">
+			<PortableText value={$query.data?.body} />
+		</div>
+	</article>
 {/if}
