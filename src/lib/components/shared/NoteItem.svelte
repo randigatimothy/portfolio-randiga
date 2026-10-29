@@ -8,7 +8,7 @@
 {#if note?.slug?.current}
 	<a
 		href="/notes/{note.slug.current}"
-		class="group flex flex-col overflow-hidden rounded-xl bg-muted/40 text-card-foreground transition-colors hover:bg-muted"
+		class="group flex flex-col overflow-hidden rounded-xl bg-muted border border-border/40 dark:border-none dark:bg-muted/40 text-card-foreground transition-colors hover:bg-muted"
 	>
 		{#if note.coverImage}
 			<figure class="aspect-video w-full overflow-hidden bg-muted">

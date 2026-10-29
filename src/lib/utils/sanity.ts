@@ -41,3 +41,20 @@ export async function getNote(postSlug: string) {
 }
 `);
 }
+
+export async function getProjects() {
+	return await sanityClient.fetch(`
+*[_type == "project"] | order(coalesce(publishedAt, _createdAt) desc) {
+  title, description, slug, body, publishedAt, _createdAt, _updatedAt, tags, link, github,
+  "coverImage" : coverImage.asset->url
+}`);
+}
+
+export async function getProject(projectSlug: string) {
+	return await sanityClient.fetch(`
+*[_type == "project" && slug.current == "${projectSlug}"][0] {
+  title, description, body, publishedAt, _createdAt, _updatedAt, tags, link, github,
+  "coverImage": coverImage.asset->url, 
+}
+`);
+}
