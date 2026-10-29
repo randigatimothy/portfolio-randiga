@@ -9,7 +9,11 @@
 </script>
 
 <div class="flex flex-col gap-8">
-	{#if $query.data}
+	{#if $query.isLoading}
+		<div class="flex flex-col items-center justify-center py-12 text-center">
+			<p class="text-muted-foreground animate-pulse text-sm">Loading posts...</p>
+		</div>
+	{:else if $query.data && $query.data.length > 0}
 		{#each $query.data as blogPost, index}
 			{#if max === null || index < max}
 				<BlogItem data={blogPost} />
@@ -23,5 +27,9 @@
 				</a>
 			{/if}
 		{/each}
+	{:else if $query.data && $query.data.length === 0}
+		<div class="flex flex-col items-center justify-center rounded-xl border border-dashed py-16 text-center">
+			<p class="text-muted-foreground text-lg font-medium">I'll keep you posted</p>
+		</div>
 	{/if}
 </div>

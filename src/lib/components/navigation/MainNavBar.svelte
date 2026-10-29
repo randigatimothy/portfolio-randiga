@@ -25,7 +25,7 @@
 					{#if isCurrentPage(href)}
 						<span
 							id="current-tab-indicator"
-							class={twMerge('absolute bottom-0 left-0 h-[4px] w-full bg-primary')}
+							class={twMerge('bg-primary absolute bottom-0 left-0 h-[4px] w-full')}
 						>
 						</span>
 					{/if}
