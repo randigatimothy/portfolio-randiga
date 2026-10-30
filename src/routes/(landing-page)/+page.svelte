@@ -14,7 +14,7 @@
 			class="z-1 font-display text-muted-foreground flex flex-col text-5xl font-semibold leading-tight md:gap-4 md:text-8xl"
 		>
 			<span data-scroll data-scroll-speed="0.2" data-scroll-delay="1"> Randiga </span>
-			<span data-scroll data-scroll-speed="0.13" data-scroll-delay="2"> Timothy </span>
+			<span data-scroll data-scroll-speed="0.13" data-scroll-delay="2"> Harnes, BPharm,MPhil </span>
 		
 		</h1>
 
