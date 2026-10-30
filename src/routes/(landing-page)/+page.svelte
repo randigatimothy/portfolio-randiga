@@ -36,15 +36,14 @@
 				data-scroll-speed="0.1"
 				class="text-md text-muted-foreground uppercase leading-tight"
 			>
-				Who am I
+				Who am I?
 			</h6>
 			<p
 				data-scroll
 				data-scroll-speed="0.05"
 				class="max-w-[60ch] pt-8 text-3xl font-semibold leading-snug md:indent-48 md:text-6xl
       "
-			>
-			Pharmacist. Scientist. Teacher
+			>Pharmacist. Scientist. Teacher
 			</p>
 		</div>
 		<hr />
@@ -54,10 +53,10 @@
 					Dear Reader,
 
 
-            I am a Randiga Harnes, a pharmacist that can't stop asking "why?" I hold big,bold dreams of seeing the world,
-            while advancing the care for cancer patients around the world. I am currently pursuing my Masters degree in Cancer Science. 
-            On here, you will get to see my thoughts, my work and the notes of things I learn. I believe the best healthcare professionals  
-            lift others as they climb, which is why peer leadershipis such a big part of my journey. Welcome to my corner of the internet :).
+            I am Randiga Harnes, a pharmacist who can't stop asking "why?" I hold big, bold dreams of seeing the world,
+            while advancing the care for cancer patients around the world. I am currently pursuing my Master's degree in Cancer Science. 
+            On here, you will get to see my thoughts, my work, and the notes of things I learn. I believe the best healthcare professionals  
+            lift others as they climb, which is why peer leadership is such a big part of my journey. Welcome to my corner of the internet :).
 			</p>
 			<p>
 			</p>
